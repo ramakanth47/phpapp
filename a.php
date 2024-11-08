@@ -3,137 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Design</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>Lucky Mobile Number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .footer {
-            background-color: #4B0082; /* Purple background */
-            color: #fff;
-            padding: 40px 0 20px;
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
         }
-        .footer h5 {
-            font-weight: bold;
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        .footer .form-control {
-            background-color: #4B0082;
-            border: 1px solid #ddd;
-            color: #fff;
-            margin-bottom: 15px;
-        }
-        .footer .form-control::placeholder {
-            color: #ddd;
-        }
-        .footer .btn {
-            background-color: #fff;
-            color: #4B0082;
-            font-weight: bold;
-            border: none;
-            padding: 8px 15px;
-            width: 100%;
-        }
-        .social-icons {
-            text-align: right;
-        }
-        .social-icons a {
-            color: #fff;
-            margin-left: 15px;
-            font-size: 20px;
-        }
-        .footer-bottom {
+        
+        .main-section {
             text-align: center;
-            font-size: 14px;
-            color: #ddd;
+            margin-top: 50px;
+        }
+        
+        /* Lucky number section (initially hidden) */
+        #luckyNumberSection {
+            display: none; /* Hidden until button click */
             margin-top: 20px;
+            color: #4a148c;
         }
-        .footer .contact-info p, .footer .quick-links ul {
-            line-height: 1.8;
-            font-size: 14px;
+        
+        /* Title styling */
+        #luckyNumberSection h3 {
+            font-weight: bold;
         }
-        .quick-links ul {
-            list-style: none;
+        
+        /* List styling */
+        #luckyNumberSection ul {
+            list-style-type: none;
             padding: 0;
+            color: #4a148c;
+            font-weight: 600;
+            margin-top: 20px;
+            line-height: 1.8;
         }
-        .quick-links ul li {
-            margin-bottom: 8px;
+        
+        /* Main button styling */
+        .main-button, .consultation-button {
+            background-color: #4a148c;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .main-button:hover, .consultation-button:hover {
+            background-color: #3c0e73;
+        }
+
+        /* WhatsApp button styling */
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: #4a148c;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Position the WhatsApp icon outside the consultation area */
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
         }
     </style>
 </head>
 <body>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Contact Info -->
-            <div class="col-md-4">
-                <h5>Contact</h5>
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Sion churubatti Road, Sion-Mumbai 400022</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Shyamlal Compound, Begampet Hyderabad 500016</p>
-                    <p><i class="fas fa-phone"></i> 9071013371</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:divineguide@gmail.com">divineguide@gmail.com</a></p>
-                </div>
-            </div>
+<div class="container main-section">
+    <h2>Lucky Mobile Number</h2>
+    <p>Discover the potential of your mobile number to bring balance, positivity, and success in your life.</p>
+    <button class="main-button" onclick="showLuckyNumberSection()">Analyse Your Mobile Number</button>
+</div>
 
-            <!-- Quick Links -->
-            <div class="col-md-4 quick-links">
-                <h5>Quick Links</h5>
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Appointments</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
-                    <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="refund.html" target="_blank">Refund and Cancellation Policy</a></li>
-                </ul>
-            </div>
+<!-- Lucky Mobile Number Analysis Section -->
+<div id="luckyNumberSection" class="text-center">
+    <h3>Lucky Mobile Number</h3>
+    <p>Your mobile number isn’t just a string of digits; it carries energy and vibrations that can impact various aspects of your life. A lucky mobile number, customized to align with your unique numerological profile, can bring balance, positivity, and success into your personal and professional world.</p>
+    <ul>
+        <li>Enhanced Prosperity</li>
+        <li>Improved Relationships</li>
+        <li>Career Success and Opportunities</li>
+        <li>Increased Positivity and Peace</li>
+        <li>Health and Well-being</li>
+        <li>Boosted Confidence and Self-Esteem</li>
+        <li>Personal Growth and Fulfillment</li>
+        <li>Alignment with Life Goals</li>
+    </ul>
+    <!-- Analyse Mobile Number Button placed above consultation -->
+    <button class="main-button" onclick="showLuckyNumberSection()">Analyse Your Mobile Number</button>
+    
+    <!-- WhatsApp Consultation Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button">
+        Consultation
+    </a>
+    
+    <!-- WhatsApp Icon outside consultation section -->
+    <img src="images/19.jpg" alt="WhatsApp Icon" class="whatsapp-icon">
+</div>
 
-            <!-- Quick Enquiry Form -->
-            <div class="col-md-4">
-                <h5>Quick Enquiry</h5>
-                <form>
-                    <input type="text" class="form-control" placeholder="Name">
-                    <input type="email" class="form-control" placeholder="Email">
-                    <input type="text" class="form-control" placeholder="Phone Number">
-                    <textarea class="form-control" rows="3" placeholder="Write Your Message"></textarea>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Social Media Icons and Footer Bottom Text -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <p class="footer-bottom">&copy; 2024-2025 All Rights Reserved by divineguide.co</p>
-            </div>
-            <div class="col-md-6 social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                 <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Bootstrap and jQuery JS -->
+<!-- Bootstrap and JavaScript -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function showLuckyNumberSection() {
+        document.getElementById("luckyNumberSection").style.display = "block";
+    }
+</script>
+
 </body>
 </html>

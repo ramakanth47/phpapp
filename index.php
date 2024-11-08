@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Added FontAwesome link -->
     <style>
-        
+        /* Styling for the horizontal lines */
+        hr {
+            border: 0;
+            border-top: 1px solid #4a148c;
+            margin: 20px 0;
+        }
+
         .language-selector {
             display: flex;
             flex-direction: column;
@@ -22,6 +28,10 @@
         }
         .language-dropdown select {
             padding: 4px;
+        }
+        .icon {
+            width: 100px;
+            height: 90px;
         }
 
         /* About Us Section Styling */
@@ -122,6 +132,7 @@
         .quick-links ul li {
             margin-bottom: 8px;
         }
+
     </style>
 </head>
 <body>
@@ -131,7 +142,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand mx-auto text-center" href="#">
-                <img src="images/logo.png" alt="Divine Guide Logo" height="50">
+                <img src="images/logo.png" alt="Divine Guide Logo" height="75">
                 <span class="brand-title"></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -140,9 +151,9 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item" id="services-link"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item" id="aboutus-link"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item" id="appointments-link"><a class="nav-link" href="#">Appointments</a></li>
-                    <li class="nav-item" id="reviews-link"><a class="nav-link" href="#">Reviews</a></li>
+                    <li class="nav-item" id="aboutus-link"><a class="nav-link" href="#aboutus-section">About Us</a></li>
+                    <li class="nav-item" id="appointments-link"><a class="nav-link" href="Appointment.php">Appointments</a></li>
+                    <li class="nav-item" id="reviews-link"><a class="nav-link" href="#reviews-section">Reviews</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                 </ul>
@@ -163,28 +174,28 @@
             </div>
         </div>
     </nav>
-    <hr class="navbar-divider">
 </header>
+<hr>
 
 <!-- Main Content -->
 <div class="container text-center my-5 normal-ui" id="main-content">
     <h1 class="mb-4">Our Services</h1>
     <div class="row text-center">
         <div class="col-md-3">
-            <img src="images/1.png" alt="Lucky Mobile Number" class="icon">
-            <p>Lucky Mobile Number</p>
+            <img src="images/4.png" alt="Lucky Mobile Number" class="icon">
+            <p><a href="luckynumber.html">Lucky Mobile Number</a></p>
         </div>
         <div class="col-md-3">
             <img src="images/2.png" alt="Numerology Name" class="icon">
-            <p>Numerology Name</p>
+            <p><a href="luckyname.html">Numerology Name</a></p>
         </div>
         <div class="col-md-3">
-            <img src="images/3.png" alt="Vastu Consultation" class="icon">
-            <p>Vastu Consultation</p>
+            <img src="images/11.png" alt="Vastu Consultation" class="icon">
+            <p><a href="vastuconsultation.html">Vastu Consultation</a></p>
         </div>
         <div class="col-md-3">
-            <img src="images/4.png" alt="Astrology Consultation" class="icon">
-            <p>Astrology Consultation</p>
+            <img src="images/8.png" alt="Astrology Consultation" class="icon">
+            <p><a href="Astrologyconsultation.html">Astrology Consultation</a></p>
         </div>
     </div>
     <div class="row mt-4 text-center">
@@ -207,6 +218,7 @@
     </div>
     <button class="btn btn-primary mt-4">Analyse Your Mobile Number, Name, Business Name, Vehicle number and Bank Account</button>
 </div>
+<hr>
 
 <!-- About Us Section -->
 <div class="container about-section" id="aboutus-section">
@@ -217,12 +229,11 @@
     
     <p>Join us, and let’s work together to reveal the energies that will guide you toward a brighter, more fulfilled life.</p>
 </div>
+<hr>
 
 <!-- Reviews Section -->
 <div class="container reviews-section" id="reviews-section">
     <h2>Reviews</h2>
-
-    
     <div class="review">
         <h4>Enlightening and Uplifting! 🌟</h4>
         <p>"I had the privilege of working with this divine guide, and it was truly an enlightening experience! From the moment we began our session, I felt an overwhelming sense of peace and clarity. Their ability to tune into my energy was remarkable, and the insights I received have helped me navigate some major life decisions with confidence. I highly recommend this service to anyone seeking guidance and support on their spiritual journey."</p>
@@ -237,7 +248,6 @@
         <p><strong>Name:</strong> Michael B.</p>
     </div>
 
-    
     <div class="review">
         <h4>Eye-Opening Experience</h4>
         <p>"I was skeptical at first, but this divine guide’s accuracy and depth were truly eye-opening. They were able to tap into things about my life that no one could have known. The guidance I received was both practical and spiritual, and I felt so much lighter after the session. I’m excited to return for more sessions!"</p>
@@ -245,6 +255,7 @@
         <p><strong>Name:</strong> Liam T.</p>
     </div>
 </div>
+<hr>
 
 <!-- Footer -->
 <footer class="footer">
@@ -261,7 +272,6 @@
                 </div>
             </div>
 
-            
             <div class="col-md-4 quick-links">
                 <h5>Quick Links</h5>
                 <ul>
@@ -276,7 +286,6 @@
                 </ul>
             </div>
 
-           
             <div class="col-md-4">
                 <h5>Quick Enquiry</h5>
                 <form>
@@ -289,7 +298,6 @@
             </div>
         </div>
 
-     
         <div class="row mt-4">
             <div class="col-md-6">
                 <p class="footer-bottom">&copy; 2024-2025 All Rights Reserved by divineguide.co</p>
